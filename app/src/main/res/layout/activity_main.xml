@@ -7,10 +7,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:textSize="32sp"
+        android:id="@+id/WorkersInfoTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
@@ -18,43 +20,102 @@
         tools:layout_editor_absoluteY="19dp" />
 
     <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
+        android:id="@+id/NameET"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="47dp" />
+        android:text="Name" />
 
     <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
+        android:id="@+id/SurnameET"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="92dp" />
+        android:text="Name" />
+
 <LinearLayout
     android:orientation="horizontal"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginTop="12sp"
     >
 
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/PositionTV"
+        android:textSize="24sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="143dp" />
+        android:layout_margin="3sp"
+        />
 
     <Spinner
         android:id="@+id/spinner2"
+        android:textSize="24sp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="3sp"
+        />
 </LinearLayout>
+
+    <TextView
+        android:id="@+id/GeneratePasswordTV"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generowanie Hasła"
+        android:layout_marginTop="24sp"
+        />
+
+    <EditText
+        android:id="@+id/PasswordCharactersET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Ile znaków?" />
+
+
+
+        <CheckBox
+            android:id="@+id/SmallAndBigLettersCB"
+            android:layout_marginTop="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/NumbersCB"
+            android:layout_widcheckBox2th="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="CheckBox"
+            />
+
+
+
+        <CheckBox
+            android:id="@+id/SpecialCharactersCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_marginTop="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+
 </LinearLayout>
